@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0ead6; /* Цвет кукурузного поля */
+    color: #556b2f; /* Цвет травы */
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.header-info {
+    background-color: #fff;
+    border: 2px solid #a0522d; /* Цвет земли */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 45%; /* Чтобы помещалось два блока в ряд */
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.name {
+    color: #8b4513; /* Цвет дерева */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.profession {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+/* Стили для карточек продуктов (каталог) */
+.product-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 30%; /* Три карточки в ряд */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    color: #666;
+}
+
+/* Дополнительные стили для адаптивности */
+@media (max-width: 768px) {
+    .header-info, .product-card {
+        width: 100%; /* Один блок на всю ширину экрана */
+    }
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ffd700; /* Цвет подсолнуха */
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border-left: 10px;
+    text-align: center
+    
+}
+
+button:hover {
+    background-color: #daa520; /* Более темный цвет подсолнуха */
+}
+footer button {
+    background-color: #ffd700;
+    border: none;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #daa520;
+}
