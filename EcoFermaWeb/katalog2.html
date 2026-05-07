@@ -8,120 +8,114 @@
 <body>
    <header class="header">
     <div class="header-info">
-        <h1 class="name"> Веселый Коровник 🐄</h1>
+        <h1 class="name">Веселый Коровник 🐄</h1>
         <h2 class="profession">Ферма Стива</h2>
         <p class="description">
             Создаю самые вкусные и экологические продукты в городе, только попробуй это райское наслаждение!
         </p>
     </div>
     <div class="header-info">
-        <h1 class="name"> Зеленые Холмы 🌄</h1>
+        <h1 class="name">Зеленые Холмы 🌄</h1>
         <h2 class="profession">Ферма Джорджа</h2>
         <p class="description">
             Трава и все что к ней относится, только натурально, без химикатов, без добавок, лишь солнце, земля и вода, попробуйте и убедитесь сами!
         </p>
     </div>
 </header>
-<section class="product-catalog">
-    <div class="product-card">
-        <img src="foto/milk.avif" alt="Молоко" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Свежее молоко (Объем от 1л)</h3>
-    <p class="product-description">Натуральное коровье молоко от "Веселого Коровника"</p>
-    <div class="product-price">129₽</div>
-    <button class="add-to-cart">Добавить в корзину</button>
-  </div>
-</section>
 
-<section class="product-catalog">
-    <div class="product-card">
-        <img src="foto/iaica.jpg" alt="Яйца" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Домашние яйца (Заказ от 10шт)</h3>
-    <p class="product-description">Яйца от счастливых курочек с "Зеленых Холмов"</p>
-    <p class="product-description"> В наличии С2/С1 категории</p>
-    <div class="product-price">139/159₽</div>
-    <button class="add-to-cart">Добавить в корзину</button>
-  </div>
-</section>
+<!-- 🔥 ВАЖНО: ОДИН контейнер .container, внутри него ОДИН .product-catalog со всеми карточками -->
+<div class="container">
+    <section class="product-catalog">
+        
+        <div class="product-card" style="--i: 1">
+            <img src="foto/milk.avif" alt="Молоко" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Свежее молоко (Объем от 1л)</h3>
+                <p class="product-description">Натуральное коровье молоко от "Веселого Коровника"</p>
+                <div class="product-price">129₽</div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
 
-<section class="product-catalog">
-     <div class="product-card">
-       <img src="foto/owoshi.jpg" alt="Овощи" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Сезонные овощи</h3>
-    <p class="product-description">О наличии тех или иных овощей интересуйтесь у оператора</p>
-    <div class="product-price">От 79 ₽</div>
-    <button class="add-to-cart">Уточнить у оператора</button>
-  </div>
-</section>   
+        <div class="product-card" style="--i: 2">
+            <img src="foto/iaica.jpg" alt="Яйца" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Домашние яйца (Заказ от 10шт)</h3>
+                <p class="product-description">Яйца от счастливых курочек с "Зеленых Холмов"</p>
+                <p class="product-description">В наличии С2/С1 категории</p>
+                <div class="product-price">139/159₽</div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
 
- <section class="product-catalog">
-     <div class="product-card">
-        <img src="foto/med.jpg" alt="Мёд" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Натуральный мёд (от 100г)</h3>
-    <p class="product-description">Собран с любовью на лугах "Зеленых Холмов"</p>
-    <div class="product-price">129₽</div>
-    <button class="add-to-cart">Добавить в корзину</button>
-  </div>
-</section>
+        <div class="product-card" style="--i: 3">
+            <img src="foto/owoshi.jpg" alt="Овощи" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Сезонные овощи</h3>
+                <p class="product-description">О наличии тех или иных овощей интересуйтесь у оператора</p>
+                <div class="product-price">От 79 ₽</div>
+                <button class="add-to-cart">Уточнить у оператора</button>
+            </div>
+        </div>
 
+        <div class="product-card" style="--i: 4">
+            <img src="foto/med.jpg" alt="Мёд" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Натуральный мёд (от 100г)</h3>
+                <p class="product-description">Собран с любовью на лугах "Зеленых Холмов"</p>
+                <div class="product-price">129₽</div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
 
- <section class="product-catalog">
-     <div class="product-card">
-        <img src="foto/car.jpg" alt="Сыр" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Домашний сыр (от 100г)</h3>
-    <p class="product-description">Сыр ручной работы от "Веселого Коровника"</p>
-     <p class="product-description">В наличии сыр из коровьего/козьего молока</p>
-    <div class="product-price">349/429₽</div>
-    <button class="add-to-cart">Добавить в корзину</button>
-  </div>
-</section>
+        <div class="product-card" style="--i: 5">
+            <img src="foto/car.jpg" alt="Сыр" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Домашний сыр (от 100г)</h3>
+                <p class="product-description">Сыр ручной работы от "Веселого Коровника"</p>
+                <p class="product-description">В наличии сыр из коровьего/козьего молока</p>
+                <div class="product-price">349/429₽</div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
 
+        <div class="product-card" style="--i: 6">
+            <img src="foto/frut.avif" alt="Фрукты" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Сезонные фрукты</h3>
+                <p class="product-description">Сочные и спелые фрукты прямо из сада!</p>
+                <p class="product-description">О наличии тех или иных фруктов интересуйтесь у оператора</p>
+                <div class="product-price">129 ₽</div>
+                <button class="add-to-cart">Уточнить у оператора</button>
+            </div>
+        </div>
 
- <section class="product-catalog">
-     <div class="product-card">
-        <img src="foto/frut.avif" alt="Фрукты" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Сезонные фрукты</h3>
-    <p class="product-description">Сочные и спелые фрукты прямо из сада!</p>
-    <p class="product-description">О наличии тех или иных фруктов интересуйтесь у оператора</p>
-    <div class="product-price">129 ₽</div>
-    <button class="add-to-cart">Уточнить у оператора</button>
-  </div>
-</section>
+        <div class="product-card" style="--i: 7">
+            <img src="foto/breads.jpg" alt="Хлеб" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Свежий хлеб (буханка 250/400г)</h3>
+                <p class="product-description">Хрустящий хлеб из пекарни "Веселого Коровника"</p>
+                <p class="product-description">В наличии ржаной (250г)/пшеничный (400г)/бородинский (400г)</p>
+                <div class="product-price">45/56/59₽</div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
 
+        <div class="product-card" style="--i: 8">
+            <img src="foto/tvorog.jpg" alt="Творог" loading="lazy" width="300" height="180">
+            <div class="product-info">
+                <h3 class="product-title">Домашний творог (от 100г)</h3>
+                <p class="product-description">Нежный творог из натурального молока "Зеленых Холмов"</p>
+                <div class="product-price">99₽</div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
 
- <section class="product-catalog">
-     <div class="product-card">
-        <img src="foto/breads.jpg" alt="Хлеб" loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">>Свежий хлеб (буханка 250/400г)</h3>
-    <p class="product-description">Хрустящий хлеб из пекарни "Веселого Коровника"</p>
-    <p class="product-description">В наличии ржаной (250г)/пшеничныйx (400г)/бородинцкий (400г)</p>
-    <div class="product-price">45/56/59₽</div>
-    <button class="add-to-cart">Добавить в корзину</button>
-  </div>
-</section>
+    </section>
+</div>
 
-
- <section class="product-catalog">
-     <div class="product-card">
-        <img src="foto/tvorog.jpg" alt="Молоко"  loading="lazy" width="300" height="180">
-  <div class="product-info">
-    <h3 class="product-title">Домашний творог (от 100г)</h3>
-    <p class="product-description">Нежный творог из натурального молока "Зеленых Холмов"</p>
-    <div class="product-price">99₽</div>
-    <button class="add-to-cart">Добавить в корзину</button>
-  </div>
-</section>
 <div class="back-button-container">
     <button onclick="history.back()" class="btn-secondary">← Вернуться на главную</button>
 </div>
-<main class="contacts">
-    <p>📧 <a href="https://mail.yandex.ru/?ncrnd=80446&uid=2289992004#tabs/relevant" target="_blank" class="contact-link">Написать нам</a></p>
-</main>
 </body>
 </html>
