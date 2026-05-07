@@ -1,6 +1,3 @@
-/* ===============================
-   🎨 CSS VARIABLES & RESET
-   =============================== */
 :root {
     /* Цветовая палитра */
     --color-bg: #f8f4e9;
@@ -32,16 +29,12 @@
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }
-
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ===============================
-   🌍 BASE STYLES
-   =============================== */
 body {
     font-family: 'Segoe UI', 'Arial', sans-serif;
     background: linear-gradient(135deg, var(--color-bg) 0%, #e8e4d1 100%);
@@ -58,9 +51,6 @@ body {
     padding: 0 var(--spacing-sm);
 }
 
-/* ===============================
-   📰 HEADER STYLES
-   =============================== */
 .header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -105,9 +95,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* ===============================
-   🛍️ PRODUCT CATALOG
-   =============================== */
 .product-catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 🔥 Строго 3 колонки на десктопе */
@@ -191,6 +178,10 @@ body {
     box-shadow: var(--shadow-sm);
     width: 100%;
     margin-top: auto;
+    
+    /* 🔥 Убираем выделение при клике, фокусе и на мобильных */
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn-primary:hover,
@@ -200,16 +191,19 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+/* Убираем эффект "вдавливания" и рамки при нажатии */
 .btn-primary:active,
 .add-to-cart:active {
     transform: translateY(0);
+    outline: none;
 }
 
-.btn-primary:focus,
-.add-to-cart:focus {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 2px;
+/* Переопределяем глобальный :focus-visible ТОЛЬКО для кнопок */
+.btn-primary:focus-visible,
+.add-to-cart:focus-visible {
+    outline: none;
 }
+
 
 .btn-secondary {
     background: transparent;
